@@ -7,7 +7,7 @@ const dividir = document.querySelector('#dividir');
 const multiplicar = document.querySelector('#multiplicar');
 const potencia = document.querySelector('#potencia');
 const resultado = document.querySelector('#resultado');
-const select = document.querySelector('#select').value;
+const select = document.querySelector('#select');
 
 form.addEventListener('submit', (e) => {
 
@@ -21,9 +21,16 @@ form.addEventListener('submit', (e) => {
     return;
   }
 
-  if (select === 'sumar') {
+  if (select.value === 'sumar') {
     resultado.textContent = `El resultado de la suma es: ${num1Value + num2Value}`;
   }
+
+
+  if (select.value === 'restar') {
+    resultado.textContent = `El resultado de la resta es: ${num1Value - num2Value}`;
+    console.log(select.value);
+  }
+
 
 
 })
