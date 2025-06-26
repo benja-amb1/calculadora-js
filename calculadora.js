@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
   const num1Value = parseInt(num1.value);
   const num2Value = parseInt(num2.value);
 
-  if (isNaN(num1Value) || isNaN(num2Value) || !num1Value || !num2Value) {
+  if (isNaN(num1Value) || isNaN(num2Value) || !num1Value || !num2Value || num1.type === 'text' || num2.type === 'text') {
     resultado.textContent = 'Debes introducir números.';
     return;
   }
