@@ -28,9 +28,17 @@ form.addEventListener('submit', (e) => {
 
   if (select.value === 'restar') {
     resultado.textContent = `El resultado de la resta es: ${num1Value - num2Value}`;
-    console.log(select.value);
   }
 
+  if (select.value === 'dividir') {
+    resultado.textContent = `El resultado de la división es: ${num1Value / num2Value}`;
+  }
 
+  if (select.value === 'multiplicar') {
+    resultado.textContent = `El resultado de la multiplicación es: ${num1Value * num2Value}`;
+  }
 
+  if (select.value === 'potencia') {
+    resultado.textContent = `El resultado de la potencia es: ${num1Value ** num2Value}`;
+  }
 })
