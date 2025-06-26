@@ -6,3 +6,20 @@ const restar = document.querySelector('#restar');
 const dividir = document.querySelector('#dividir');
 const multiplicar = document.querySelector('#multiplicar');
 const potencia = document.querySelector('#potencia');
+const resultado = document.querySelector('#resultado');
+const select = document.querySelector('#select');
+
+form.addEventListener('submit', (e) => {
+
+  e.preventDefault();
+
+  const num1Value = parseInt(num1.value);
+  const num2Value = parseInt(num2.value);
+
+  if (isNaN(num1Value) || isNaN(num2Value) || !num1Value || !num1Value) {
+    resultado.textContent = 'Debes introducir números.';
+    return;
+  }
+
+
+})
